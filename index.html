@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #f8f8f8; /* Off-white background */
-            font-family: sans-serif; /* Simple font */
+            font-family: "SF Pro", sans-serif; /* SF Pro font, fallback to sans-serif */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +23,16 @@
         }
 
         h1 {
-            text-align: center;
+            text-align: left; /* Left-align the title */
+            margin-left: 20px; /* Align with bullet points */
+        }
+
+        a {
+            color: grey; /* Grey color for links */
+        }
+
+        a:visited {
+            color: grey; /* Grey color for visited links */
         }
     </style>
 </head>
