@@ -45,6 +45,25 @@
         ul ul li {
             margin-bottom: 0.1em; /* Tighter spacing for sub-bullets */
         }
+
+        .company-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: 36px;
+            row-gap: 0.1em;
+            margin-top: 0.75em;
+            padding-left: 20px;
+        }
+
+        .company-list li {
+            margin-bottom: 0.1em;
+        }
+
+        @media (max-width: 640px) {
+            .company-list {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -53,7 +72,7 @@
         <ul>
             <li>
                 Co-Founder and Partner at <a href="https://www.neweraventures.com/">New Era Ventures</a>, an early-stage venture firm focused on backing the most ambitious Gen Z founders across the US. Some companies we've backed include:
-                <ul>
+                <ul class="company-list">
                     <li><a href="https://www.mercor.com/">Mercor</a></li>
                     <li><a href="https://www.valaratomics.com/">Valar Atomics</a></li>
                     <li><a href="https://www.a37.ai/">applied37</a></li>
